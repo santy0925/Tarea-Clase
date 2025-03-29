@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicios JavaScript</title>
+</head>
+<body>
+    <script>
+        // Ejercicio 1
+        alert("Hello World");
+
+        // Ejercicio 2
+        document.write("Hello World");
+
+        // Ejercicio 3
+        document.write(3 + 5);
+
+        // Ejercicio 4
+        let nombre = prompt("Ingrese su nombre:");
+        document.write("Hola " + nombre);
+
+        // Ejercicio 5
+        let num1 = parseInt(prompt("Ingrese un número:"));
+        let num2 = parseInt(prompt("Ingrese otro número:"));
+        document.write("La suma es: " + (num1 + num2));
+
+        // Ejercicio 6
+        let num1 = parseInt(prompt("Ingrese un número:"));
+        let num2 = parseInt(prompt("Ingrese otro número:"));
+        if (num1 > num2) document.write("El mayor es: " + num1);
+        else document.write("El mayor es: " + num2);
+
+        // Ejercicio 7
+        let num1 = parseInt(prompt("Ingrese un número:"));
+        let num2 = parseInt(prompt("Ingrese otro número:"));
+        let num3 = parseInt(prompt("Ingrese otro número:"));
+        let mayor = Math.max(num1, num2, num3);
+        document.write("El mayor es: " + mayor);
+
+        // Ejercicio 8
+        let num = parseInt(prompt("Ingrese un número:"));
+        if (num % 2 == 0) document.write("El número es divisible por 2");
+        else document.write("El número no es divisible por 2");
+
+        // Ejercicio 9
+        let frase = prompt("Ingrese una frase:");
+        let contador = 0;
+        for (let i = 0; i < frase.length; i++) if (frase[i].toLowerCase() == "a") contador++;
+        document.write("La letra 'a' aparece " + contador + " veces");
+
+        // Ejercicio 10
+        let frase = prompt("Ingrese una frase:");
+        let vocales = "";
+        for (let i = 0; i < frase.length; i++) if ("aeiouAEIOU".includes(frase[i])) vocales += frase[i] + " ";
+        document.write("Las vocales que aparecen son: " + vocales);
+
+        // Ejercicio 11
+        let frase = prompt("Ingrese una frase:");
+        let contador = 0;
+        for (let i = 0; i < frase.length; i++) if ("aeiouAEIOU".includes(frase[i])) contador++;
+        document.write("El número de vocales es: " + contador);
+
+        // Ejercicio 12
+        let frase = prompt("Ingrese una frase:");
+        let vocales = { a: 0, e: 0, i: 0, o: 0, u: 0 };
+        for (let i = 0; i < frase.length; i++) {
+            let vocal = frase[i].toLowerCase();
+            if ("aeiou".includes(vocal)) vocales[vocal]++;
+        }
+        document.write("El número de veces que aparecen cada vocal es: ");
+        document.write("a: " + vocales.a + ", e: " + vocales.e + ", i: " + vocales.i + ", o: " + vocales.o + ", u: " + vocales.u);
+
+        // Ejercicio 13
+        let num = parseInt(prompt("Ingrese un número:"));
+        if (num % 2 == 0 || num % 3 == 0 || num % 5 == 0 || num % 7 == 0) document.write("El número es divisible por alguno de los siguientes números: 2, 3, 5, 7");
+        else document.write("El número no es divisible por ninguno de los siguientes números: 2, 3, 5, 7");
+
+        // Ejercicio 14
+        let num = parseInt(prompt("Ingrese un número:"));
+        let divisores = [];
+        if (num % 2 == 0) divisores.push(2);
+        if (num % 3 == 0) divisores.push(3);
+        if (num % 5 == 0) divisores.push(5);
+        if (num % 7 == 0) divisores.push(7);
+        if (divisores.length > 0) document.write("El número es divisible por los siguientes números: " + divisores.join(", "));
+        else document.write("El número no es divisible por ninguno de los siguientes números: 2, 3, 5, 7");
+
+        // Ejercicio 15
+        let num = parseInt(prompt("Ingrese un número:"));
+        let divisores = [];
+        for (let
